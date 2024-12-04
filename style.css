@@ -1,0 +1,498 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a4d0f; /* Fundo verde clarinho */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(45deg, #67b26f, #4ca2cd);
+    color: rgb(253, 253, 253);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header .menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .menu li {
+    margin: 0;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header .menu a:hover {
+    color: #ffdd59;
+}
+/* fim menu*/
+
+
+/* Seção Destaque */
+section.destaque {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: rgb(200, 235, 178);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section.destaque img.imagem-destaque {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+section.destaque figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+
+footer .social-links .social-icon:hover {
+    color: #59ff82;
+}
+
+
+/* Estilo de receitas */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article figure img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+article ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+article ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo de dicas */
+.dicas article {
+    margin-bottom: 30px;
+}
+
+.dicas h2 {
+    font-size: 22px;
+    color: #56b35e;
+}
+
+/* Estilo do formulário de contato */
+.contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contato label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contato input, .contato textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato button {
+    padding: 10px;
+    background-color: #56b35e;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #4c9d4c;
+}
+
+
+
+
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e Layout geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.receitas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Artigo de cada receita */
+.receita {
+    background-color: rgb(197, 241, 140);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagens das receitas */
+.img-receita {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.voltar-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Footer
+/* Página de receita individual */
+.receita-detalhada {
+    padding: 20px;
+    background-color: #c2fad0;
+}
+
+.receita-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.receita-container figure {
+    flex: 1 1 40%;
+    max-width: 45%;
+    text-align: center;
+}
+
+.receita-container .ingredientes-preparo {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+h1, h2 {
+    color: #2e8b57;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul, ol {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+.img-receita {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.voltar-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.voltar-btn .btn {
+    padding: 10px 20px;
+    background-color: #2e8b57;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.voltar-btn .btn:hover {
+    background-color: #1f6b42;
+}
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4f5d7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #4caf50;
+    text-align: center;
+}
+
+
+
+/* Seções */
+main {
+    padding: 20px;
+}
+
+.descricao {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-pequena {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+.missao-valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.missao, .valores {
+    flex: 1 1 calc(50% - 20px);
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Equipe */
+.membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.membro {
+    text-align: center;
+    flex: 1 1 calc(50% - 20px);
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #388e3c;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #3a3636;
+    color: white;
+    margin-top: 20px;
+}
+/* Estilo Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fdf7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #4caf50;
+    text-align: center;
+}
+
+p.intro {
+    text-align: center;
+    margin: 15px auto 20px;
+    font-size: 1.2rem;
+    max-width: 800px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(45deg, #67b26f, #4ca2cd);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header .menu a:hover {
+    color: #ffdd59;
+}
+
+/* Artigos */
+.artigos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.dica {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.img-dica {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #262b2e;
+    color: white;
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #5dec4f;
+}
